@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengingat Tugas dan Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Reminder Tugas dan Quiz</h1>
+    </header>
+    <main>
+        <section id="tugas">
+            <h2>Tambah Tugas / Quiz</h2>
+            <form id="form-tugas">
+                <input type="text" id="judul-tugas" placeholder="Judul Tugas / Quiz" required>
+                <input type="date" id="tanggal-tugas" required>
+                <button type="submit">Tambah</button>
+            </form>
+        </section>
+        <section id="daftar-tugas">
+            <h2>Daftar Tugas dan Quiz</h2>
+            <ul id="list-tugas">
+            </ul>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

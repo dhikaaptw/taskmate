@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc; /* Warna latar belakang yang cerah dan netral */
+    color: #333; /* Warna teks lebih gelap untuk kontras */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #2c3e50; /* Warna gelap untuk header */
+    color: #ecf0f1; /* Teks terang di header */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Form Tugas */
+#tugas {
+    background-color: #ffffff; /* Warna putih agar lebih bersih */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#tugas h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Warna gelap yang kontras */
+}
+
+/* Styling untuk form input */
+#tugas form {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 12px 15px;
+    font-size: 1.1em;
+    border: 1px solid #ddd; /* Border yang halus */
+    border-radius: 8px;
+    outline: none;
+    width: 250px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: #f9f9f9; /* Latar belakang input yang lebih terang */
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+    border-color: #3498db; /* Border berwarna biru ketika fokus */
+    background-color: #fff; /* Latar belakang putih ketika fokus */
+}
+
+/* Button */
+button {
+    background-color: #3498db; /* Biru yang lembut */
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 200px;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background-color: #2980b9; /* Warna lebih gelap saat hover */
+}
+
+/* Daftar Tugas */
+#daftar-tugas {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+#daftar-tugas h2 {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 20px;  /* Menambahkan jarak di bawah judul */
+    color: #2c3e50;
+}
+
+#daftar-tugas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#daftar-tugas li {
+    background-color: #ecf0f1; /* Latar belakang setiap item tugas */
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#daftar-tugas li span {
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+#daftar-tugas li button {
+    background-color: #e74c3c; /* Tombol merah untuk hapus */
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#daftar-tugas li button:hover {
+    background-color: #c0392b; /* Warna lebih gelap saat hover */
+}
+
+/* Status selesai */
+#daftar-tugas li.done {
+    background-color: #2ecc71; /* Green for completed tasks */
+}
+
+#daftar-tugas li.done span {
+    text-decoration: line-through; /* Menandai tugas yang sudah selesai */
+}
+
+/* Styling tombol di daftar tugas */
+#list-tugas li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#list-tugas li:hover {
+    transform: translateY(-5px);
+}
+
+#list-tugas button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Tombol Selesai */
+#list-tugas .done {
+    background-color: #4caf50; /* Hijau */
+    color: white;
+}
+
+#list-tugas .done:hover {
+    background-color: #45a049;
+}
+
+/* Tombol Edit */
+#list-tugas .edit {
+    background-color: #ffc107; /* Kuning */
+    color: black;
+}
+
+#list-tugas .edit:hover {
+    background-color: #e0a800;
+}
+
+/* Tombol Hapus */
+#list-tugas .delete {
+    background-color: #f44336; /* Merah */
+    color: white;
+}
+
+#list-tugas .delete:hover {
+    background-color: #d32f2f;
+}
